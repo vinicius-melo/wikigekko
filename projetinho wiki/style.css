@@ -74,6 +74,7 @@ main{
     height: auto;
     z-index: 0;
     padding-left: 45%;
+    color: aliceblue;
 }
 .hab-gekko img{
     width: 100px;
@@ -118,6 +119,7 @@ input:checked + .habilidade .desc-habilidade p {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: #5a43d3;
 }
 .video iframe{
     width: 600px;
@@ -127,5 +129,9 @@ input:checked + .habilidade .desc-habilidade p {
     padding-right: 50px;
     font-size: 50px;
     font-weight: bold;
+    color: #dbf270;
 
 }
+body {
+    overflow-x: hidden;
+  }
