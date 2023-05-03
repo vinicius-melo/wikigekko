@@ -1,9 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/valorant');
-*{font-family: 'VALORANT', sans-serif;
+*{
+    font-family: 'VALORANT', sans-serif;
     margin: 0px;
     padding: 0px;
     /* background-color: mediumpurple; */
 }
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
 header{
     flex-direction: column;
     display: flex;
@@ -52,7 +59,6 @@ main{
     color: black;
 }
 .conteudo-gekko .agente p{
-    font-family: 'VALORANT', sans-serif;
     margin-left: 25%;
     padding-top: 2%;
     font-weight: bold;
@@ -60,11 +66,12 @@ main{
 }
 
 .hab-gekko{
-    display: flex;
+    display: block;
+    flex-direction: column;
     padding-top: 20px;
     background-color: mediumpurple;
     width: 55%;
-    height: 400px;
+    height: auto;
     z-index: 0;
     padding-left: 45%;
 }
@@ -75,3 +82,50 @@ main{
     padding-right: 70px;
 }
 
+.desc-habilidade{
+    display: none;  
+}
+input:checked + .habilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(50px);  
+    transition: transform 0.5s ease; /* adiciona a transição para a propriedade transform */
+
+}
+input:checked + .habilidade .desc-habilidade{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + .habilidade .desc-habilidade p {
+    width: 60%;
+}
+
+.desc-habilidade img{
+    width: 40%;
+    height: 300px;
+}
+.video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.video iframe{
+    width: 600px;
+    height: 400px;
+}
+.video p{
+    padding-right: 50px;
+    font-size: 50px;
+    font-weight: bold;
+
+}
